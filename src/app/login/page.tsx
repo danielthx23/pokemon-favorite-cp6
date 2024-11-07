@@ -52,10 +52,10 @@ const LoginPage = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <h1 className="text-2xl font-bold text-center">Login</h1>
+      <h1 className="text-2xl font-bold text-center text-neutral-950">Login</h1>
       {error && <p className="text-red-500 text-center">{error}</p>}
       <div>
-        <label htmlFor="username" className="block text-sm font-medium text-white-700">
+        <label htmlFor="username" className="block text-sm font-medium text-neutral-950">
           Nome de Usuário
         </label>
         <input
@@ -69,7 +69,7 @@ const LoginPage = () => {
         />
       </div>
       <div>
-        <label htmlFor="password" className="block text-sm font-medium text-white-700">
+        <label htmlFor="password" className="block text-sm font-medium text-neutral-950">
           Senha
         </label>
         <input
