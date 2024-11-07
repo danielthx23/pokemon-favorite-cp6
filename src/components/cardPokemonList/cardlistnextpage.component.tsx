@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { CardPokemon } from '@/types/pokemonCard'
 import CardComponent from '../cardPokemon/cardpokemon.component'
 import { getPokemonCards, getPokemonCardsByName } from '@/services/tcg-pokemon.service'
-import Loader from '../loader/loader.component';
+import Loader from '../loader/loader.component'
 import SearchBar from '../searchBar/searchbar.component'
 
 interface CardListComponentsProps {
@@ -67,7 +67,7 @@ const CardListNextPageComponent = ({ perPage = 9 }: CardListComponentsProps) => 
     <div>
       <SearchBar onSearch={handleSearch} />
 
-      <section className="grid grid-cols-3 gap-4 mt-4">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         {cards.map((card) => (
           <CardComponent key={card.id} card={card} />
         ))}
