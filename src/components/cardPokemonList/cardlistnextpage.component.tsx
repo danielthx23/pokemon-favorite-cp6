@@ -20,7 +20,7 @@ const CardListNextPageComponent = ({ perPage = 9 }: CardListComponentsProps) => 
 
   useEffect(() => {
     getCards()
-  }, [page, searchQuery])  // Trigger effect on page change or search query change
+  }, [page, searchQuery]) 
 
   const getCards = async () => {
     if (loading || !hasMore) {
